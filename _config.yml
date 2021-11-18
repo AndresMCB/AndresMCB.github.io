@@ -1,3 +1,5 @@
-theme: jekyll-theme-lokmont
+remote_theme: jekyll-theme-lokmont
+plugins:
+- jekyll-remote-theme
 title: Andres Mauricio Cifuentes Bernal's github homepage
 description: Github page with projects and packages I have developed
