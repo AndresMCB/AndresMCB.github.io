@@ -3,3 +3,5 @@ plugins:
 - jekyll-remote-theme
 title: Andres Mauricio Cifuentes Bernal's github homepage
 description: Github page with projects and packages I have developed
+
+theme: jekyll-theme-architect
