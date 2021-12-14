@@ -1,7 +1,16 @@
-remote_theme: jekyll-theme-lokmont
-plugins:
-- jekyll-remote-theme
-title: Andres Mauricio Cifuentes Bernal's github homepage
-description: Github page with projects and packages I have developed
+name: Jekyll Themes
+url: http://matt.harzewski.com
+description: Insert tagline here
 
-theme: jekyll-theme-architect
+permalink: /themes/:title/
+
+plugins: [jekyll-paginate]
+
+highlighter: pygments
+paginate: 20
+
+markdown: rdiscount
+rdiscount:
+    extensions: ['smart']
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'vendor']
