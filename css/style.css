@@ -1,0 +1,35 @@
+body {
+  color: #263238;
+}
+
+section {
+  padding: 3rem 0 1rem;
+  scroll-margin-top: 56px;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.pub {
+  padding: 1rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pub:last-of-type {
+  border-bottom: none;
+}
+
+.btn-xs {
+  --bs-btn-padding-y: .1rem;
+  --bs-btn-padding-x: .5rem;
+  --bs-btn-font-size: .8rem;
+}
+
+summary {
+  cursor: pointer;
+  color: var(--bs-link-color);
+}
