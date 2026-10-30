@@ -33,3 +33,7 @@ summary {
   cursor: pointer;
   color: var(--bs-link-color);
 }
+
+.news li {
+  margin-bottom: .4rem;
+}
