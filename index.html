@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Andres Cifuentes Bernal</title>
   <meta name="description" content="Andres Cifuentes Bernal, Lecturer at Adelaide University Online. Causal inference, machine learning and bioinformatics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,11 +15,10 @@
 
 <nav class="navbar navbar-expand bg-white border-bottom sticky-top">
   <div class="container flex-wrap">
-    <a class="navbar-brand fw-semibold" href="#">Andres Cifuentes Bernal</a>
+    <a class="navbar-brand" href="#">Andres Cifuentes Bernal</a>
     <ul class="navbar-nav flex-wrap">
-      <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-      <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
       <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+      <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
       <li class="nav-item"><a class="nav-link" href="#software">Software</a></li>
       <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
       <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -24,26 +26,25 @@
   </div>
 </nav>
 
-<header class="bg-light border-bottom">
-  <div class="container py-5">
-    <div class="row align-items-center g-4">
-      <!--
-      <div class="col-md-3 text-center">
-        <img src="images/andres.jpg" class="img-fluid rounded-circle" alt="Andres Cifuentes Bernal">
-      </div>
-      -->
-      <div class="col-lg-9">
-        <h1 class="display-6 mb-1">Andres Cifuentes Bernal</h1>
-        <p class="lead text-secondary mb-3">Lecturer, Adelaide University Online</p>
-        <p>I work on causal inference and machine learning for processes that change over time. In my PhD at the University of South Australia I developed methods that order samples along a pseudotime and use that ordering to find the causal drivers of cancer progression. More recently I've been working on time-series foundation models, and I'm starting to look at learning analytics in online education.</p>
-        <p>Before moving to Australia I was a mechatronic engineer and lecturer in Colombia, working on rehabilitation devices, EMG signals and exoskeletons.</p>
-        <div class="d-flex flex-wrap gap-2 mt-3">
-          <a class="btn btn-primary btn-sm" href="mailto:andres.cifuentesbernal@adelaide.edu.au">Email</a>
-          <a class="btn btn-outline-secondary btn-sm" href="https://scholar.google.com/citations?user=XF-4yMQAAAAJ&amp;hl=en">Google Scholar</a>
-          <a class="btn btn-outline-secondary btn-sm" href="https://orcid.org/0000-0002-1880-3624">ORCID</a>
-          <a class="btn btn-outline-secondary btn-sm" href="https://github.com/AndresMCB">GitHub</a>
-          <a class="btn btn-outline-secondary btn-sm" href="https://researchers.adelaide.edu.au/profile/andres.cifuentesbernal">University profile</a>
-        </div>
+<header class="container py-5">
+  <div class="row align-items-center g-4">
+    <!--
+    <div class="col-md-3 text-center">
+      <img src="images/andres.jpg" class="img-fluid rounded-circle" alt="Andres Cifuentes Bernal">
+    </div>
+    -->
+    <div class="col-lg-9">
+      <h1 class="mb-1">Andres Cifuentes Bernal</h1>
+      <p class="text-secondary mb-4">Lecturer &middot; Adelaide University Online &middot; Adelaide, Australia</p>
+      <p>I work on causal inference and machine learning for processes that change over time. In my PhD at the University of South Australia I developed methods that order samples along a pseudotime and use that ordering to find the causal drivers of cancer progression. More recently I've been working on time-series foundation models, and I'm starting to look at learning analytics in online education.</p>
+      <p>Before moving to Australia I was a mechatronic engineer and lecturer in Colombia, working on rehabilitation devices, EMG signals and exoskeletons.</p>
+      <p class="mb-3"><span class="text-secondary">Interests:</span> causal discovery, temporal models, cancer genomics, time-series forecasting, learning analytics.</p>
+      <div class="d-flex flex-wrap gap-2">
+        <a class="btn btn-primary btn-sm" href="mailto:andres.cifuentesbernal@adelaide.edu.au">Email</a>
+        <a class="btn btn-outline-primary btn-sm" href="https://scholar.google.com/citations?user=XF-4yMQAAAAJ&amp;hl=en">Google Scholar</a>
+        <a class="btn btn-outline-primary btn-sm" href="https://orcid.org/0000-0002-1880-3624">ORCID</a>
+        <a class="btn btn-outline-primary btn-sm" href="https://github.com/AndresMCB">GitHub</a>
+        <a class="btn btn-outline-primary btn-sm" href="https://researchers.adelaide.edu.au/profile/andres.cifuentesbernal">University profile</a>
       </div>
     </div>
   </div>
@@ -51,90 +52,119 @@
 
 <main class="container">
 
-  <section id="research">
-    <h2>Research interests</h2>
-    <div class="row g-4">
-      <div class="col-md-6">
-        <h3 class="h6">Causal inference in cancer genomics</h3>
-        <p class="text-secondary">Finding genes and miRNA&ndash;mRNA interactions that drive cancer progression, using pseudotime to give cross-sectional data a temporal order.</p>
-      </div>
-      <div class="col-md-6">
-        <h3 class="h6">Time-series foundation models</h3>
-        <p class="text-secondary">Making pretrained forecasting models work on difficult real-world data, such as rainfall records that are mostly zeros.</p>
-      </div>
-      <div class="col-md-6">
-        <h3 class="h6">Learning analytics</h3>
-        <p class="text-secondary">Using data from online courses to understand student engagement and to improve course design.</p>
-      </div>
-      <div class="col-md-6">
-        <h3 class="h6">Biomedical engineering (earlier work)</h3>
-        <p class="text-secondary">Wearable sensors, EMG signal processing, exoskeletons and assistive devices.</p>
-      </div>
-    </div>
+  <section id="news">
+    <h2>News</h2>
+    <ul class="list-unstyled news">
+      <li>
+        <span class="date">2026</span>
+        <span>Paper on rainfall forecasting with time-series foundation models at <a href="https://doi.org/10.1145/3774904.3792998">The Web Conference (WWW 2026)</a>.</span>
+      </li>
+      <li>
+        <span class="date">2026</span>
+        <span>Released <a href="https://github.com/AndresMCB/PTC-python">PTC-python</a>, a Python version of the PTC package.</span>
+      </li>
+      <li>
+        <span class="date">Dec 2025</span>
+        <span>Our work on cooperating cancer genes is out in <a href="https://doi.org/10.1098/rsos.250442"><em>Royal Society Open Science</em></a>,
+        and was covered by <a href="https://www.eurekalert.org/news-releases/1109079">EurekAlert!</a>,
+        <a href="https://medicalxpress.com/news/2025-12-gene-method-hidden-drivers-cancer.html">Medical Xpress</a>,
+        <a href="http://www.china.org.cn/world/Off_the_Wire/2025-12/10/content_118220823.shtml">Xinhua</a>
+        and <a href="#press">others</a>.</span>
+      </li>
+      <li>
+        <span class="date">2025</span>
+        <span>Started as Lecturer at Adelaide University Online.</span>
+      </li>
+      <li>
+        <span class="date">2024</span>
+        <span>PhD completed at the University of South Australia; high commendation for the Michael Miller Medal.</span>
+      </li>
+    </ul>
   </section>
 
   <section id="publications">
     <h2>Selected publications</h2>
-    <p class="text-secondary">Full list on <a href="https://scholar.google.com/citations?user=XF-4yMQAAAAJ&amp;hl=en">Google Scholar</a>.</p>
 
-    <div class="pub">
-      <span class="badge text-bg-light border">WWW 2026</span>
-      <h3 class="h6 mt-2 mb-1">Energy-Efficient Training-Free Zero-Inflation Correction for Rainfall Forecasting with Time-Series Foundation Models</h3>
-      <div class="small">W. Gao, X. Du, X. Chen, Y. Guo, <strong>A. M. Cifuentes-Bernal</strong>, R. Luo, Z. Xu</div>
-      <div class="small text-secondary fst-italic">Proceedings of the ACM Web Conference 2026</div>
-      <div class="mt-2">
-        <a class="btn btn-outline-primary btn-xs" href="https://doi.org/10.1145/3774904.3792998">Paper</a>
+    <div class="row pub">
+      <div class="col-md-2 venue">WWW 2026</div>
+      <div class="col-md-10">
+        <div class="title">Energy-Efficient Training-Free Zero-Inflation Correction for Rainfall Forecasting with Time-Series Foundation Models</div>
+        <div>W. Gao, X. Du, X. Chen, Y. Guo, <strong>A. M. Cifuentes-Bernal</strong>, R. Luo, Z. Xu</div>
+        <div class="text-secondary fst-italic">Proceedings of the ACM Web Conference 2026</div>
+        <div class="links"><a href="https://doi.org/10.1145/3774904.3792998">paper</a></div>
       </div>
     </div>
 
-    <div class="pub">
-      <span class="badge text-bg-light border">R. Soc. Open Sci. 2025</span>
-      <h3 class="h6 mt-2 mb-1">Identifying cooperative genes causing cancer progression with dynamic causal inference</h3>
-      <div class="small"><strong>A. M. Cifuentes Bernal</strong>, L. Liu, J. Li, T. D. Le</div>
-      <div class="small text-secondary fst-italic">Royal Society Open Science, 12(12)</div>
-      <div class="mt-2">
-        <a class="btn btn-outline-primary btn-xs" href="https://doi.org/10.1098/rsos.250442">Paper</a>
-        <a class="btn btn-outline-primary btn-xs" href="https://doi.org/10.1101/2023.11.22.568367">Preprint</a>
-        <a class="btn btn-outline-primary btn-xs" href="https://github.com/AndresMCB/DynamicCancerDriverKM">Code</a>
-        <a class="btn btn-outline-primary btn-xs" href="#news">In the news</a>
+    <div class="row pub">
+      <div class="col-md-2 venue">RSOS 2025</div>
+      <div class="col-md-10">
+        <div class="title">Identifying cooperative genes causing cancer progression with dynamic causal inference</div>
+        <div><strong>A. M. Cifuentes Bernal</strong>, L. Liu, J. Li, T. D. Le</div>
+        <div class="text-secondary fst-italic">Royal Society Open Science, 12(12)</div>
+        <div class="links">
+          <a href="https://doi.org/10.1098/rsos.250442">paper</a>
+          <a href="https://doi.org/10.1101/2023.11.22.568367">preprint</a>
+          <a href="https://github.com/AndresMCB/DynamicCancerDriverKM">code</a>
+        </div>
+        <details id="press" class="mt-2">
+          <summary>Press coverage (12)</summary>
+          <ul class="small mt-2 mb-0">
+            <li><a href="https://unisa.edu.au/media-centre/Releases/2025/new-gene-mapping-method-unlocks-hidden-drivers-of-cancer/">UniSA media release</a></li>
+            <li><a href="https://www.eurekalert.org/news-releases/1109079">EurekAlert!</a></li>
+            <li><a href="https://medicalxpress.com/news/2025-12-gene-method-hidden-drivers-cancer.html">Medical Xpress</a></li>
+            <li><a href="https://www.news-medical.net/news/20251209/AI-driven-method-uncovers-genetic-interactions-that-fuel-cancer-progression.aspx">News-Medical</a></li>
+            <li><a href="https://www.azolifesciences.com/news/20251211/AI-Driven-Method-Uncovers-Hidden-Cancer-Drivers.aspx">AZoLifeSciences</a></li>
+            <li><a href="https://ecancer.org/en/news/27436-new-gene-mapping-method-unlocks-hidden-drivers-of-cancer">ecancer</a></li>
+            <li><a href="http://www.china.org.cn/world/Off_the_Wire/2025-12/10/content_118220823.shtml">Xinhua / China.org.cn</a></li>
+            <li><a href="https://medtechspectrum.com/news/16/25100/unisa-scientists-develop-ai-tool-to-map-gene-interactions-fueling-tumour-growth.html">MedTech Spectrum</a></li>
+            <li><a href="https://www.tun.com/home/ai-gene-mapping-method-reveals-hidden-drivers-of-cancer/">TUN</a></li>
+            <li><a href="https://patientdaily.com/stories/676932160-ai-tool-reveals-group-gene-interactions-driving-cancer-progression">Patient Daily</a></li>
+            <li><a href="https://acgt.co.za/new-gene-mapping-method-unlocks-hidden-drivers-of-cancer/">African Centre for Gene Technologies</a></li>
+            <li><a href="https://portstephens.newsofthearea.com.au/new-gene-mapping-method-unlocks-hidden-drivers-of-cancer">News Of The Area</a></li>
+          </ul>
+        </details>
       </div>
     </div>
 
-    <div class="pub">
-      <span class="badge text-bg-light border">Brief. Funct. Genomics 2022</span>
-      <h3 class="h6 mt-2 mb-1">Dynamic cancer drivers: a causal approach for cancer driver discovery based on bio-pathological trajectories</h3>
-      <div class="small"><strong>A. M. Cifuentes Bernal</strong>, V. V. H. Pham, X. Li, L. Liu, J. Li, T. D. Le</div>
-      <div class="small text-secondary fst-italic">Briefings in Functional Genomics, 21(6)</div>
-      <div class="mt-2">
-        <a class="btn btn-outline-primary btn-xs" href="https://doi.org/10.1093/bfgp/elac030">Paper</a>
-        <a class="btn btn-outline-primary btn-xs" href="https://github.com/AndresMCB/DynamicCancerDriver">Code</a>
+    <div class="row pub">
+      <div class="col-md-2 venue">BFG 2022</div>
+      <div class="col-md-10">
+        <div class="title">Dynamic cancer drivers: a causal approach for cancer driver discovery based on bio-pathological trajectories</div>
+        <div><strong>A. M. Cifuentes Bernal</strong>, V. V. H. Pham, X. Li, L. Liu, J. Li, T. D. Le</div>
+        <div class="text-secondary fst-italic">Briefings in Functional Genomics, 21(6)</div>
+        <div class="links">
+          <a href="https://doi.org/10.1093/bfgp/elac030">paper</a>
+          <a href="https://github.com/AndresMCB/DynamicCancerDriver">code</a>
+        </div>
       </div>
     </div>
 
-    <div class="pub">
-      <span class="badge text-bg-light border">Bioinformatics 2021</span>
-      <h3 class="h6 mt-2 mb-1">A pseudotemporal causality approach to identifying miRNA-mRNA interactions during biological processes</h3>
-      <div class="small"><strong>A. M. Cifuentes-Bernal</strong>, V. V. Pham, X. Li, L. Liu, J. Li, T. D. Le</div>
-      <div class="small text-secondary fst-italic">Bioinformatics, 37(6)</div>
-      <div class="mt-2">
-        <a class="btn btn-outline-primary btn-xs" href="https://doi.org/10.1093/bioinformatics/btaa899">Paper</a>
-        <a class="btn btn-outline-primary btn-xs" href="https://doi.org/10.1101/2020.07.07.192724">Preprint</a>
-        <a class="btn btn-outline-primary btn-xs" href="https://github.com/AndresMCB/PTC">Code (R)</a>
-        <a class="btn btn-outline-primary btn-xs" href="https://github.com/AndresMCB/PTC-python">Code (Python)</a>
+    <div class="row pub">
+      <div class="col-md-2 venue">Bioinformatics 2021</div>
+      <div class="col-md-10">
+        <div class="title">A pseudotemporal causality approach to identifying miRNA-mRNA interactions during biological processes</div>
+        <div><strong>A. M. Cifuentes-Bernal</strong>, V. V. Pham, X. Li, L. Liu, J. Li, T. D. Le</div>
+        <div class="text-secondary fst-italic">Bioinformatics, 37(6)</div>
+        <div class="links">
+          <a href="https://doi.org/10.1093/bioinformatics/btaa899">paper</a>
+          <a href="https://doi.org/10.1101/2020.07.07.192724">preprint</a>
+          <a href="https://github.com/AndresMCB/PTC">code (R)</a>
+          <a href="https://github.com/AndresMCB/PTC-python">code (Python)</a>
+        </div>
       </div>
     </div>
 
-    <div class="pub">
-      <span class="badge text-bg-light border">ICCBB 2017</span>
-      <h3 class="h6 mt-2 mb-1">An R<sup>n</sup> surface to describe sport performance in women's basketball using Kohonen nets on ECG signals</h3>
-      <div class="small"><strong>A. M. Cifuentes Bernal</strong>, R. A. B. Cañon, M. P. Torres</div>
-      <div class="small text-secondary fst-italic">International Conference on Computational Biology and Bioinformatics</div>
-      <div class="mt-2">
-        <a class="btn btn-outline-primary btn-xs" href="https://doi.org/10.1145/3155077.3155082">Paper</a>
+    <div class="row pub">
+      <div class="col-md-2 venue">ICCBB 2017</div>
+      <div class="col-md-10">
+        <div class="title">An R<sup>n</sup> surface to describe sport performance in women's basketball using Kohonen nets on ECG signals</div>
+        <div><strong>A. M. Cifuentes Bernal</strong>, R. A. B. Cañon, M. P. Torres</div>
+        <div class="text-secondary fst-italic">International Conference on Computational Biology and Bioinformatics</div>
+        <div class="links"><a href="https://doi.org/10.1145/3155077.3155082">paper</a></div>
       </div>
     </div>
 
-    <details class="mt-3">
+    <details class="mt-4">
       <summary>Earlier engineering papers (2016&ndash;2018)</summary>
       <ul class="small text-secondary mt-2">
         <li>Low-cost wearable sensor system to measure finger joint angles. <em>ECS Transactions</em>, 2018. <a href="https://doi.org/10.1149/08616.0039ecst">doi</a></li>
@@ -145,95 +175,64 @@
         <li>Converting electric wheelchairs into smart wheelchairs. <em>Ciencia y Poder Aéreo</em>, 2016. <a href="https://doi.org/10.18667/cienciaypoderaereo.532">doi</a></li>
       </ul>
     </details>
-  </section>
-
-  <section id="news">
-    <h2>In the news</h2>
-    <p>Coverage of our <em>Royal Society Open Science</em> paper on cooperating cancer genes (December 2025):</p>
-    <ul class="news">
-      <li><a href="https://unisa.edu.au/media-centre/Releases/2025/new-gene-mapping-method-unlocks-hidden-drivers-of-cancer/">New gene-mapping method unlocks hidden drivers of cancer</a> <span class="text-secondary">&ndash; UniSA media release</span></li>
-      <li><a href="https://www.eurekalert.org/news-releases/1109079">New gene-mapping method unlocks hidden drivers of cancer</a> <span class="text-secondary">&ndash; EurekAlert!</span></li>
-      <li><a href="https://medicalxpress.com/news/2025-12-gene-method-hidden-drivers-cancer.html">New gene-mapping method unlocks hidden drivers of cancer</a> <span class="text-secondary">&ndash; Medical Xpress</span></li>
-      <li><a href="https://www.news-medical.net/news/20251209/AI-driven-method-uncovers-genetic-interactions-that-fuel-cancer-progression.aspx">AI-driven method uncovers genetic interactions that fuel cancer progression</a> <span class="text-secondary">&ndash; News-Medical</span></li>
-      <li><a href="https://www.azolifesciences.com/news/20251211/AI-Driven-Method-Uncovers-Hidden-Cancer-Drivers.aspx">AI-driven method uncovers hidden cancer drivers</a> <span class="text-secondary">&ndash; AZoLifeSciences</span></li>
-      <li><a href="https://ecancer.org/en/news/27436-new-gene-mapping-method-unlocks-hidden-drivers-of-cancer">New gene-mapping method unlocks hidden drivers of cancer</a> <span class="text-secondary">&ndash; ecancer</span></li>
-      <li><a href="http://www.china.org.cn/world/Off_the_Wire/2025-12/10/content_118220823.shtml">Scientists develop new gene-mapping method to unlock cancer's hidden drivers</a> <span class="text-secondary">&ndash; Xinhua / China.org.cn</span></li>
-      <li><a href="https://medtechspectrum.com/news/16/25100/unisa-scientists-develop-ai-tool-to-map-gene-interactions-fueling-tumour-growth.html">UniSA scientists develop AI tool to map gene interactions fueling tumour growth</a> <span class="text-secondary">&ndash; MedTech Spectrum</span></li>
-      <li><a href="https://www.tun.com/home/ai-gene-mapping-method-reveals-hidden-drivers-of-cancer/">AI gene-mapping method reveals hidden drivers of cancer</a> <span class="text-secondary">&ndash; TUN</span></li>
-      <li><a href="https://patientdaily.com/stories/676932160-ai-tool-reveals-group-gene-interactions-driving-cancer-progression">AI tool reveals group gene interactions driving cancer progression</a> <span class="text-secondary">&ndash; Patient Daily</span></li>
-      <li><a href="https://acgt.co.za/new-gene-mapping-method-unlocks-hidden-drivers-of-cancer/">New gene-mapping method unlocks hidden drivers of cancer</a> <span class="text-secondary">&ndash; African Centre for Gene Technologies</span></li>
-      <li><a href="https://portstephens.newsofthearea.com.au/new-gene-mapping-method-unlocks-hidden-drivers-of-cancer">New gene-mapping method unlocks hidden drivers of cancer</a> <span class="text-secondary">&ndash; News Of The Area</span></li>
-    </ul>
-    <p class="small text-secondary">More on <a href="https://royalsociety.altmetric.com/details/185515495">Altmetric</a>.</p>
+    <p class="mt-3 text-secondary">Full list on <a href="https://scholar.google.com/citations?user=XF-4yMQAAAAJ&amp;hl=en">Google Scholar</a>.</p>
   </section>
 
   <section id="software">
     <h2>Software</h2>
-    <div class="row g-3">
-      <div class="col-md-6">
-        <div class="card h-100">
-          <div class="card-body">
-            <h3 class="h6 card-title"><a href="https://github.com/AndresMCB/PTC">PTC</a> / <a href="https://github.com/AndresMCB/PTC-python">PTC-python</a></h3>
-            <p class="card-text small text-secondary">Pseudotemporal causality for miRNA-mRNA interactions. Available in R and Python; both give the same results.</p>
-          </div>
-          <div class="card-footer bg-transparent small text-secondary">R &middot; Python</div>
-        </div>
+    <div class="list-group list-group-flush">
+      <div class="list-group-item px-0">
+        <a href="https://github.com/AndresMCB/PTC">PTC</a> / <a href="https://github.com/AndresMCB/PTC-python">PTC-python</a>
+        <span class="badge rounded-pill text-bg-light border ms-1">R</span>
+        <span class="badge rounded-pill text-bg-light border">Python</span>
+        <div class="text-secondary small">Pseudotemporal causality for miRNA-mRNA interactions. Both versions give the same results.</div>
       </div>
-      <div class="col-md-6">
-        <div class="card h-100">
-          <div class="card-body">
-            <h3 class="h6 card-title"><a href="https://github.com/AndresMCB/DynamicCancerDriverKM">DynamicCancerDriverKM</a></h3>
-            <p class="card-text small text-secondary">Cooperative cancer drivers with causal kinetic models, plus a gene expression simulator.</p>
-          </div>
-          <div class="card-footer bg-transparent small text-secondary">R</div>
-        </div>
+      <div class="list-group-item px-0">
+        <a href="https://github.com/AndresMCB/DynamicCancerDriverKM">DynamicCancerDriverKM</a>
+        <span class="badge rounded-pill text-bg-light border ms-1">R</span>
+        <div class="text-secondary small">Cooperative cancer drivers with causal kinetic models, plus a gene expression simulator.</div>
       </div>
-      <div class="col-md-6">
-        <div class="card h-100">
-          <div class="card-body">
-            <h3 class="h6 card-title"><a href="https://github.com/AndresMCB/DynamicCancerDriver">DynamicCancerDriver</a></h3>
-            <p class="card-text small text-secondary">Cancer driver discovery along bio-pathological trajectories.</p>
-          </div>
-          <div class="card-footer bg-transparent small text-secondary">R</div>
-        </div>
+      <div class="list-group-item px-0">
+        <a href="https://github.com/AndresMCB/DynamicCancerDriver">DynamicCancerDriver</a>
+        <span class="badge rounded-pill text-bg-light border ms-1">R</span>
+        <div class="text-secondary small">Cancer driver discovery along bio-pathological trajectories.</div>
       </div>
-      <div class="col-md-6">
-        <div class="card h-100">
-          <div class="card-body">
-            <h3 class="h6 card-title"><a href="https://github.com/AndresMCB/AMCBGeneUtils">AMCBGeneUtils</a></h3>
-            <p class="card-text small text-secondary">Gene expression pre-processing utilities used by the packages above.</p>
-          </div>
-          <div class="card-footer bg-transparent small text-secondary">R</div>
-        </div>
+      <div class="list-group-item px-0">
+        <a href="https://github.com/AndresMCB/AMCBGeneUtils">AMCBGeneUtils</a>
+        <span class="badge rounded-pill text-bg-light border ms-1">R</span>
+        <div class="text-secondary small">Gene expression pre-processing utilities used by the packages above.</div>
       </div>
     </div>
   </section>
 
   <section id="teaching">
-    <h2>Teaching</h2>
-    <p>Courses at Adelaide University Online (previously UniSA Online), 2024&ndash;present:</p>
-    <div class="table-responsive">
-      <table class="table table-sm w-auto">
-        <tbody>
-          <tr><td class="text-secondary pe-4">INFS 3081</td><td>Predictive Analytics</td></tr>
-          <tr><td class="text-secondary pe-4">INFS 3087</td><td>Advanced Topics in Data Analytics</td></tr>
-          <tr><td class="text-secondary pe-4">INFS 3089</td><td>Text and Social Media Analytics</td></tr>
-          <tr><td class="text-secondary pe-4">INFS 2049</td><td>Experimental Design</td></tr>
-          <tr><td class="text-secondary pe-4">INFS 1028</td><td>Professional Practice in Data Analytics</td></tr>
-          <tr><td class="text-secondary pe-4">INFS 1023</td><td>Design Thinking and Digital Innovation</td></tr>
-          <tr><td class="text-secondary pe-4">MATH 1081</td><td>Mathematics Essentials in Data Analytics</td></tr>
-        </tbody>
-      </table>
+    <div class="row g-4 gx-lg-5">
+      <div class="col-lg-7">
+        <h2>Teaching</h2>
+        <p>Courses at Adelaide University Online (previously UniSA Online), 2024&ndash;present:</p>
+        <table class="table table-sm">
+          <tbody>
+            <tr><td class="text-secondary">INFS 3081</td><td>Predictive Analytics</td></tr>
+            <tr><td class="text-secondary">INFS 3087</td><td>Advanced Topics in Data Analytics</td></tr>
+            <tr><td class="text-secondary">INFS 3089</td><td>Text and Social Media Analytics</td></tr>
+            <tr><td class="text-secondary">INFS 2049</td><td>Experimental Design</td></tr>
+            <tr><td class="text-secondary">INFS 1028</td><td>Professional Practice in Data Analytics</td></tr>
+            <tr><td class="text-secondary">INFS 1023</td><td>Design Thinking and Digital Innovation</td></tr>
+            <tr><td class="text-secondary">MATH 1081</td><td>Mathematics Essentials in Data Analytics</td></tr>
+          </tbody>
+        </table>
+        <p class="small text-secondary">Before that I taught engineering at Universidad Militar Nueva Granada and Universidad Piloto de Colombia (2011&ndash;2018).</p>
+      </div>
+      <div class="col-lg-5">
+        <h2>Awards and service</h2>
+        <ul class="list-unstyled awards">
+          <li>Michael Miller Medal, high commendation<br><span class="text-secondary small">UniSA, 2024</span></li>
+          <li>ATN&ndash;South American PhD scholarship<br><span class="text-secondary small">2019</span></li>
+          <li>Australia&ndash;Americas PhD research internship<br><span class="text-secondary small">Australian Academy of Science, 2018</span></li>
+          <li>Reviewer<br><span class="text-secondary small"><em>Briefings in Bioinformatics</em>, <em>Molecular Therapy &ndash; Nucleic Acids</em></span></li>
+        </ul>
+      </div>
     </div>
-    <p>Before that I taught engineering at Universidad Militar Nueva Granada and Universidad Piloto de Colombia (2011&ndash;2018).</p>
-
-    <h3 class="h6 mt-4">Awards and service</h3>
-    <ul>
-      <li>Michael Miller Medal, high commendation, UniSA (2024)</li>
-      <li>ATN&ndash;South American PhD scholarship (2019)</li>
-      <li>Australia&ndash;Americas PhD research internship, Australian Academy of Science (2018)</li>
-      <li>Reviewer for <em>Briefings in Bioinformatics</em> and <em>Molecular Therapy &ndash; Nucleic Acids</em></li>
-    </ul>
   </section>
 
   <section id="contact">
@@ -245,7 +244,7 @@
 
 </main>
 
-<footer class="border-top py-4 mt-4">
+<footer class="border-top py-4 mt-5">
   <div class="container small text-secondary">Last updated October 2026</div>
 </footer>
 
