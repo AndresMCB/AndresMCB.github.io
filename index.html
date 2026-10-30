@@ -11,18 +11,23 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#mainnav" data-bs-root-margin="0px 0px -60%" tabindex="0">
 
-<nav class="navbar navbar-expand bg-white border-bottom sticky-top">
-  <div class="container flex-wrap">
+<nav class="navbar navbar-expand-md bg-white border-bottom sticky-top">
+  <div class="container">
     <a class="navbar-brand" href="#">Andres Cifuentes Bernal</a>
-    <ul class="navbar-nav flex-wrap">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navlinks" aria-controls="navlinks" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navlinks">
+    <ul class="navbar-nav" id="mainnav">
       <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
       <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
       <li class="nav-item"><a class="nav-link" href="#software">Software</a></li>
       <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
       <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
     </ul>
+    </div>
   </div>
 </nav>
 
@@ -69,7 +74,7 @@
         and was covered by <a href="https://www.eurekalert.org/news-releases/1109079">EurekAlert!</a>,
         <a href="https://medicalxpress.com/news/2025-12-gene-method-hidden-drivers-cancer.html">Medical Xpress</a>,
         <a href="http://www.china.org.cn/world/Off_the_Wire/2025-12/10/content_118220823.shtml">Xinhua</a>
-        and <a href="#press">others</a>.</span>
+        and <a href="#rsos2025">others</a>.</span>
       </li>
       <li>
         <span class="date">2025</span>
@@ -95,7 +100,7 @@
       </div>
     </div>
 
-    <div class="row pub">
+    <div class="row pub" id="rsos2025">
       <div class="col-md-2 venue">RSOS 2025</div>
       <div class="col-md-10">
         <div class="title">Identifying cooperative genes causing cancer progression with dynamic causal inference</div>
@@ -106,8 +111,8 @@
           <a href="https://doi.org/10.1101/2023.11.22.568367">preprint</a>
           <a href="https://github.com/AndresMCB/DynamicCancerDriverKM">code</a>
         </div>
-        <details id="press" class="mt-2">
-          <summary>Press coverage (12)</summary>
+        <a class="toggle small" data-bs-toggle="collapse" href="#press" role="button" aria-expanded="false" aria-controls="press">Press coverage (12)</a>
+        <div class="collapse" id="press">
           <ul class="small mt-2 mb-0">
             <li><a href="https://unisa.edu.au/media-centre/Releases/2025/new-gene-mapping-method-unlocks-hidden-drivers-of-cancer/">UniSA media release</a></li>
             <li><a href="https://www.eurekalert.org/news-releases/1109079">EurekAlert!</a></li>
@@ -122,7 +127,7 @@
             <li><a href="https://acgt.co.za/new-gene-mapping-method-unlocks-hidden-drivers-of-cancer/">African Centre for Gene Technologies</a></li>
             <li><a href="https://portstephens.newsofthearea.com.au/new-gene-mapping-method-unlocks-hidden-drivers-of-cancer">News Of The Area</a></li>
           </ul>
-        </details>
+        </div>
       </div>
     </div>
 
@@ -164,8 +169,8 @@
       </div>
     </div>
 
-    <details class="mt-4">
-      <summary>Earlier engineering papers (2016&ndash;2018)</summary>
+    <a class="toggle d-inline-block mt-4" data-bs-toggle="collapse" href="#earlier" role="button" aria-expanded="false" aria-controls="earlier">Earlier engineering papers (2016&ndash;2018)</a>
+    <div class="collapse" id="earlier">
       <ul class="small text-secondary mt-2">
         <li>Low-cost wearable sensor system to measure finger joint angles. <em>ECS Transactions</em>, 2018. <a href="https://doi.org/10.1149/08616.0039ecst">doi</a></li>
         <li>Movement intention prediction for a lighter exoskeleton design. <em>IOP Conf. Series: Materials Science and Engineering</em>, 2017. <a href="https://doi.org/10.1088/1757-899X/272/1/012001">doi</a></li>
@@ -174,7 +179,7 @@
         <li>Design of an active orthosis for prolonged surgery. <em>Rev. Cubana Invest. Biomed.</em>, 2016.</li>
         <li>Converting electric wheelchairs into smart wheelchairs. <em>Ciencia y Poder Aéreo</em>, 2016. <a href="https://doi.org/10.18667/cienciaypoderaereo.532">doi</a></li>
       </ul>
-    </details>
+    </div>
     <p class="mt-3 text-secondary">Full list on <a href="https://scholar.google.com/citations?user=XF-4yMQAAAAJ&amp;hl=en">Google Scholar</a>.</p>
   </section>
 
@@ -238,7 +243,7 @@
   <section id="contact">
     <h2>Contact</h2>
     <p>I'm happy to talk about research and collaborations, in English or Spanish.</p>
-    <p class="mb-1">andres.cifuentesbernal [at] adelaide.edu.au</p>
+    <p class="mb-1"><a href="mailto:andres.cifuentesbernal@adelaide.edu.au">andres.cifuentesbernal@adelaide.edu.au</a></p>
     <p class="text-secondary">Adelaide University Online, Adelaide, South Australia</p>
   </section>
 
@@ -247,6 +252,8 @@
 <footer class="border-top py-4 mt-5">
   <div class="container small text-secondary">Last updated October 2026</div>
 </footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
